@@ -6,7 +6,6 @@ class Class1 {
 
     public function __construct() {
         $this->num = 2;
-        //echo $this->num;
     }
 
     public function getNum() {
@@ -16,7 +15,6 @@ class Class1 {
 }
 
 $test1 = new Class1();
-//$test1->num = 3;
 echo $test1->getNum();
 
 

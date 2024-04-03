@@ -17,7 +17,11 @@ $fun = make_pipeline(
     },
     function ($x) {
         return $x / 2;
+    },
+    function ($x) {
+        return $x + 20;
     }
+
 );
 
-echo $fun(3); # should print 5
+echo $fun(3); # should print 25

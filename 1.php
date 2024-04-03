@@ -1,52 +1,39 @@
 <?php
 
-$array1 = [
-    [
-        "id" => 5,
-        "date" => "01/05/2015",
-        [
-            "id" => 7,
-            "date" => "05/01/2015",
-        ],
-        [
-            "id" => 8,
-            "date" => "12/12/2015",
-        ],
-    ]
-];
+// Define API endpoint
+$apiUrl = "https://coderbyte.com/api/challenges/logs/user-info-csv";
 
-$array2 = array_column($array1, "date");
-$temp = 0;
-for ($i = 0; $i < count($array2); $i++) {
-    for ($j = 1; $j < count($array2); $j++) {
-        if (strtotime($array2[$i] > strtotime($array2[$i]))) {
-            $temp = $array2[$i];
-            $array2[$i] = $array2[$j];
-            $array2[$j] = $temp;
-        }
-    }
-}
-print_r($array2);
+// Function to sort CSV data
+function findCsvByColumn($rowData, $columnData) {
+  $lines = explode("\n", $rowData);
+  $header = array_shift($lines);
+  $headerData = explode(",", $header);
 
-$category = "Supplier Development";
-$string = "Supplier";
-if (strpos($category, $string) !== false) {
-    echo "Found!";
-} else {
-    echo "Not Found";
+  // Check if column index is valid
+  if (!isset($headerData[$columnData])) {
+    throw new Exception("Invalid column index: " . $columnData);
+  }
+
+  usort($lines, function ($a, $b) use ($columnData) {
+    $asertValues = explode(",", $a);
+    $bsertValues = explode(",", $b);
+    return strcmp($asertValues[$columnData], $bsertValues[$columnData]);
+  });
+
+  // Prepend header back to sorted data
+  array_unshift($lines, $header);
+  return implode("\n", $lines);
 }
 
+// Get CSV data
+$rowData = file_get_contents($apiUrl);
 
-$data = array(4, 5, 23, 0, 100, 5, 7, 33, 44, 100);
-$val = 1;
-for ($i = count($data); $i >= 1; --$i) {
-    for ($j = 0; $j < $i; ++$j) {
-        if(isset($data[$j]) && !empty($data[$j])) {
-            if ($data[$j] === $data[$i]) {
-                $val = $data[$j];
-            }
-        }
-    }
+// Sort data by email (second column)
+try {
+  $sortedCsv = findCsvByColumn($rowData, 1); // Email is in the second column (index 1)
+  echo $sortedCsv;
+} catch (Exception $e) {
+  echo $e->getMessage();
 }
-echo "<pre>";
-print_r($data);
+
+?>

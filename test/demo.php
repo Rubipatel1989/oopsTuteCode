@@ -1,16 +1,9 @@
 <?php
 
-class Singleton {
-	private static $instance;
- 
-	private function __construct() {}
- 
-	public static function getInstance() {
-    	if (!self::$instance) {
-        	self::$instance = new self();
-    	}
-    	return self::$instance;
-	}
-}
- $singleton = new Singleton();
- 
+
+
+$x = 5;
+if ($x > 5) { print "Fruit"; }
+elseif ($x = 6) { print "Ice cream"; }
+elseif ($x < 6) { print "Vegetables"; }
+else { print "Diamond"; }

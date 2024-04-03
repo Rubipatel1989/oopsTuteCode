@@ -17,7 +17,6 @@ class Circle implements Shape {
     public function calcArea() {
         return $this->radius * $this->radius * pi();
     }
-
 }
 
 class Rectanglee implements Shape {
@@ -35,9 +34,3 @@ class Rectanglee implements Shape {
     }
 
 }
-
-$test1 = new Circle(3.4);
-echo "Circle Area : " . $test1->calcArea();
-echo "<br>";
-$test2 = new Rectanglee(12, 13);
-echo "Rectanglee Area : " . $test2->calcArea();
