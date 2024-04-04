@@ -3,7 +3,8 @@
 
 // The Reactor Pattern utilizes an intermediary service handler which demultiplexes requests and dispatches to the correct handler.
 
-// The Observer Pattern requires that "Observers" register with the subject, which then pushes notifications to all registered observers when an event occurs.
+// The Observer Pattern requires that "Observers" register with the subject, which then pushes notifications to 
+// all registered observers when an event occurs.
 
 // Interface for the Subject (Observable)
 interface Subject {
