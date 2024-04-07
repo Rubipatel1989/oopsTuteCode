@@ -1,5 +1,8 @@
 <?php
 
+// As name abstract class this is not complete itself, but need child class fulfill its property. 
+// At least one abstract method compulsory in class.
+
 abstract class Animal{
     abstract protected function makeSound();
 }

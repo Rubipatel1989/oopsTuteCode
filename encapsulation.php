@@ -1,5 +1,9 @@
 <?php
 
+// Encapsulation is a protection mechanism (Access modifier) for the data members and methods present 
+// inside the class. In the encapsulation technique, we are restricting the data members, 
+// methods from access to outside end-user.
+
 class Class1 {
 
     private $num;

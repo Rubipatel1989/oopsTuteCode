@@ -1,4 +1,7 @@
 <?php
+// When multiple classes inherit in a single class then this is called interface. Suppose we have 
+// 2 interface first is parent1 with method addition and second is parent2 with method subtraction. 
+// When both interface implement in child class then both method of interface must be applied in child class. 
 
 interface parrent1 {
 

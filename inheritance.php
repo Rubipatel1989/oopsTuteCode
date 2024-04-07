@@ -1,9 +1,6 @@
 <?php
-
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHP.php to edit this template
- */
+// When a class derives from another class. The child class will inherit all the public, protected properties
+// and methods from the parent class. An inherited class is defined by using the extends keyword.
 
 class Employee {
 

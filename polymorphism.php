@@ -1,5 +1,9 @@
 <?php
 
+// In Opps when a message can display more than one form that’s called Polymorphism.
+// Suppose we have an interface named with Shape and method calcArea(). When Shape implements in class 
+// Circle then it’s calculated area and also when Shape implements in class Rectangle then also this calculates area.
+
 // Overloding
 interface Shape {
 

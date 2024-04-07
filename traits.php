@@ -1,4 +1,6 @@
 <?php 
+// When a common method used in different-different class then this is called trait. Suppose we have a trait 
+// name Hello with method SayHello then it can be use different-different class. (Syntax use)
 
 trait hello{
     public function sayHello($name){
