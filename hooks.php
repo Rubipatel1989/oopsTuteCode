@@ -1,6 +1,7 @@
 <?php
 
-// hooks are commonly used in extend or modify the behavior of the framework or application at specific points in its execution. Hooks are often 
+// hooks are commonly used in extend or modify the behavior of the framework or application at specific 
+// points in its execution. Hooks are often 
 // implemented using a design pattern such as the Observer pattern or the Event Listener pattern.
 
 class EventManager {
