@@ -1,6 +1,6 @@
 <?php
 
-// Global Functions: These functions are defined outside of any class. They can be called from anywhere in your 
+// Global Functions: These functions are defined outside of any class. They can be called from anywhere in our 
 // PHP code, as long as the file where they are defined is included or required. 
 // Global functions are not associated with any specific class, so they are useful for general-purpose functions that 
 // don't belong to a particular class.
