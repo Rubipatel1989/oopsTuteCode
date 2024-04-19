@@ -1,6 +1,8 @@
 <?php
-// The Singleton pattern ensures that a class has only one instance and provides a global point of access to it. 
-// We can implement it by making the constructor private and providing a static method to access the instance
+// The Singleton design pattern is a creational pattern that ensures
+// a class has only one instance and provides a global point of access to that instance. 
+// It is useful in situations where you need exactly one instance of a class, which is shared 
+// across the application.
 
 class Singleton {
 
