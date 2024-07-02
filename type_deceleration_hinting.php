@@ -5,21 +5,24 @@
 
 // In PHP, you can use type declarations for the following data types:
 
-    // 1. Scalar types (int, float, string, bool): You can specify these types directly in the function 
+// 1. Scalar types (int, float, string, bool): You can specify these types directly in the function 
 
-    function sum(int $a, int $b): int {
-        return $a + $b;
-    }
+function sum(int $a, int $b): int
+{
+    return $a + $b;
+}
 // 2. Compound types (array, callable, iterable, object): You can specify these types using 
 // the type name in the function signature. For example:
 
 
-    function processArray(array $arr): void {
-        // Process the array
-    }   
+function processArray(array $arr): void
+{
+    // Process the array
+}
 // 3. Nullable types: You can specify that a parameter or return value can be null by adding a question
-    // mark (?) before the type name. For example:
+// mark (?) before the type name. For example:
 
-        function getValue(?string $name): ?string {
-            return $name;
-        } 
+function getValue(?string $name): ?string
+{
+    return $name;
+}

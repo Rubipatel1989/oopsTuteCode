@@ -27,3 +27,6 @@ class LetterCounter
         return implode(",", $output);
     }
 }
+
+$obj = new LetterCounter();
+echo $obj->CountLettersAsString("Kumar");
