@@ -1,0 +1,21 @@
+Vue.js uses a reactive data binding system. There are two main types of data binding:
+
+1. One-way data binding: Updates the view from the model (data to UI).
+2. Two-way data binding: Synchronizes data between the model 
+    and the view (data to UI and UI to data).
+Example:
+
+
+<div id="app">
+  <input v-model="message" placeholder="Enter a message">
+  <p>{{ message }}</p>
+</div>
+
+<script>
+  new Vue({
+    el: '#app',
+    data: {
+      message: ''
+    }
+  });
+</script>

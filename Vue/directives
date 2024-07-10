@@ -1,0 +1,15 @@
+Directives are special tokens in the markup that tell the library to 
+do something to a DOM element. Common Vue.js directives include:
+
+1. v-bind: Dynamically binds one or more attributes.
+2. v-model: Creates a two-way binding on an input, select, or textarea.
+3. v-if / v-else-if / v-else: Conditionally renders elements.
+4. v-for: Renders a list of items.
+5. v-on: Attaches event listeners.
+Example:
+
+
+<div id="app">
+  <p v-if="seen">Now you see me</p>
+  <button v-on:click="seen = !seen">Toggle</button>
+</div>

@@ -1,0 +1,25 @@
+Answer:
+Vue.js is a progressive JavaScript framework used for building user interfaces. 
+Its key features include:
+
+1. Reactive Data Binding: Ensures that the UI automatically updates when the data changes.
+2. Components: Reusable and self-contained units of code.
+3. Directives: Special tokens in the markup that tell the library to do something to a DOM element.
+4. Transitions/Animations: Provides ways to apply animations during DOM manipulation.
+5. Templates: Combine the power of a declarative rendering system with the flexibility of JavaScript.
+6. Vue CLI: A powerful tool for scaffolding and managing Vue.js projects.
+Example:
+
+
+<div id="app">
+  {{ message }}
+</div>
+
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue!'
+    }
+  });
+</script>

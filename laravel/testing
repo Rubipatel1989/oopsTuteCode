@@ -1,0 +1,5 @@
+Testing in Laravel is typically done using PHPUnit and Laravel’s 
+built-in testing helpers. You can create test cases using the 
+php artisan make:test command. Laravel provides features for testing 
+various aspects of your application, including HTTP requests, 
+database interactions, and console commands.

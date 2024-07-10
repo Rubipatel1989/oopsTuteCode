@@ -1,5 +1,8 @@
 <?php
-
+// Laravel provides a simple way to rate limit API requests using the 
+// ThrottleRequests middleware. You can define rate limiting in your routes 
+// or controllers using the throttle method, specifying the maximum number of 
+// requests allowed within a given time frame.
 
 use Illuminate\Support\Facades\RateLimiter;
 use Symfony\Component\HttpFoundation\Response;
