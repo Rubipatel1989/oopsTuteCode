@@ -1,0 +1,6 @@
+Seeders are used to populate your database with data, typically for initial setup or testing.
+They can insert data that you might use for development, testing, or production.
+
+
+php artisan make:seeder UserSeeder
+php artisan db:seed --class=UserSeeder

@@ -1,7 +1,7 @@
 <?php
-    // 1. Events
-    // Events are typically defined as classes in the App\Events directory. 
-    // An event class is essentially a data container that holds the information about the event.
+// 1. Events
+// Events are typically defined as classes in the App\Events directory. 
+// An event class is essentially a data container that holds the information about the event.
 namespace App\Events;
 
 use App\Models\Order;

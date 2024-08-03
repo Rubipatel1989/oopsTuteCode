@@ -1,0 +1,4 @@
+Factories are used to generate fake data for testing purposes. 
+They provide a convenient way to create instances of models with random, but valid data.
+
+php artisan make:factory UserFactory
