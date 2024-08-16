@@ -1,0 +1,20 @@
+1. Create Project
+composer create-project laravel/laravel ecommerce --prefer-dist --version=10.*
+2. .env file
+	add db details
+
+3. key generate
+	php artisan key:generate
+
+4. Admin Panel create / Ui
+	composer require laravel/ui
+	php artisan ui bootstrap --auth
+	php artisan migrate
+5. Alter table
+	php artisan make:migration add_is_admin_to_users_table --table=users
+6. Create Model & Migration
+	php artisan make:model Logistics -m
+7. Create controller with basic method
+	php artisan make:controller LogisticsController --resource
+
+ 

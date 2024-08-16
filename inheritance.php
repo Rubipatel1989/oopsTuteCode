@@ -2,6 +2,23 @@
 // When a class derives from another class. The child class will inherit all the public, protected properties
 // and methods from the parent class. An inherited class is defined by using the extends keyword.
 
+// Why Use Inheritance ?
+// Code Reusability:
+// Avoids redundant code by sharing common properties and methods among related classes.   
+// Reduces development time and effort.   
+
+// Hierarchical Organization:
+// Creates a clear structure for your classes, making the code easier to understand and maintain.   
+// Promotes better code organization and modularity.   
+
+// Extensibility:
+// Allows you to create specialized classes by adding new features or overriding existing ones.   
+// Facilitates customization and adaptation to changing requirements.
+
+// Polymorphism:
+// Enables you to treat objects of different types as if they were of the same type.   
+// Increases flexibility and code adaptability.
+
 class Employee {
 
     public $name;

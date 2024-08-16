@@ -1,0 +1,25 @@
+OOP in PHP
+OOP stands for Object-Oriented Programming. It's a programming paradigm that revolves around the concept of "objects" which contain data (properties) and code (methods) that operate on that data.
+
+Benefits of OOP in PHP
+
+Reusability:
+Classes can be reused to create multiple objects, reducing code duplication.
+
+Modularity:
+Code is organized into self-contained units (objects), making it easier to manage and maintain.
+
+Encapsulation:
+Protects data from external access, enhancing security and data integrity.
+
+Inheritance:
+Creates hierarchical relationships between classes, promoting code reusability and extensibility.
+
+Polymorphism:
+Allows objects of different types to be treated as if they were of the same type, increasing flexibility.
+
+Improved Code Organization:
+Promotes better code structure and readability.
+
+Scalability:
+Easier to expand and modify applications without affecting existing code.
